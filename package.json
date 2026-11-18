@@ -1,0 +1,15 @@
+{
+    "name": "sterlingaddons-site",
+    "private": true,
+    "type": "module",
+    "scripts":
+    {
+        "dev": "wrangler dev",
+        "check": "node test/worker.test.js && node tools/style.mjs --check && wrangler deploy --dry-run",
+        "style": "node tools/style.mjs"
+    },
+    "devDependencies":
+    {
+        "wrangler": "^4"
+    }
+}

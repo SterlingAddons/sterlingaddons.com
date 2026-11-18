@@ -1,0 +1,16 @@
+# sterlingaddons.com landing page. Separate from the sync server Worker (sync.sterlingaddons.com), which this never touches.
+name = "sterlingaddons-site"
+main = "src/worker.js"
+compatibility_date = "2026-11-01"
+workers_dev = false
+
+routes = [
+    { pattern = "sterlingaddons.com", custom_domain = true },
+    { pattern = "www.sterlingaddons.com", custom_domain = true },
+]
+
+[assets]
+directory = "site"
+binding = "ASSETS"
+not_found_handling = "404-page"
+run_worker_first = true

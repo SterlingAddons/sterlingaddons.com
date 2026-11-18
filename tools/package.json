@@ -1,0 +1,10 @@
+{
+    "name": "sterlingaddons-site-tools",
+    "private": true,
+    "description": "Style tool for the site's JavaScript. Run: npm install --prefix tools, then node tools/style.mjs",
+    "type": "module",
+    "devDependencies":
+    {
+        "@babel/parser": "^8.1.2"
+    }
+}

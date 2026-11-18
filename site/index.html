@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sterling: add-ons for WoW Forever</title>
+    <meta name="description" content="Sterling Quest Sync keeps your quest log in step with friends on WoW Forever, with live compare and a catch-up path. Free and open source.">
+    <meta name="theme-color" content="#211a15">
+    <link rel="canonical" href="https://sterlingaddons.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sterlingaddons.com/">
+    <meta property="og:title" content="Sterling: add-ons for WoW Forever">
+    <meta property="og:description" content="Quest with friends without losing track of who has done what.">
+    <meta property="og:image" content="https://sterlingaddons.com/img/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-64.png" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preload" href="/fonts/spectral-sc-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="top">
+        <div class="wrap top-in">
+            <a class="brand" href="/" aria-label="Sterling home">
+                <img src="/img/sterling.png" width="34" height="34" alt="">
+                <span>Sterling</span>
+            </a>
+            <nav class="nav" aria-label="Main">
+                <a href="#quest-sync">Quest Sync</a>
+                <a href="#companion">Companion</a>
+                <a href="#more">More</a>
+                <a href="#install">Install</a>
+                <a href="#help">Help</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="wrap hero-in">
+                <div class="hero-text">
+                    <p class="eyebrow">Add-ons for WoW Forever</p>
+                    <h1>Quest with friends without losing track of who has done what.</h1>
+                    <p class="lead">Sterling keeps your quest log in step with your friends, shows what each of you has done, and plans the route to catch up. Free and open source.</p>
+                    <div class="actions">
+                        <a class="btn primary" href="#install">Get Sterling Quest Sync</a>
+                        <a class="btn" href="#quest-sync">See what it does</a>
+                    </div>
+                </div>
+                <figure class="hero-shot frame-shot">
+                    <img src="/img/map.webp" width="1218" height="673" alt="The Sterling Quest Sync map window: a recorded route through Stranglethorn Vale with each quest stop listed beside it.">
+                </figure>
+            </div>
+        </section>
+
+        <section id="quest-sync" class="band">
+            <div class="wrap">
+                <div class="product-head">
+                    <img class="medal" src="/img/quest.png" width="72" height="72" alt="">
+                    <div>
+                        <p class="eyebrow">The main add-on</p>
+                        <h2>Sterling Quest Sync</h2>
+                        <p class="meta">
+                            <span class="ver" data-repo="SterlingQuest">v0.3.18</span>
+                            <span class="sep">·</span>
+                            <span>Free, open source (MIT)</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="features">
+                    <div class="feature">
+                        <h3>Quest-log sync</h3>
+                        <p>Share quest logs with up to 10 friends. See who has a quest, who's ready to turn it in and who's done, right on tooltips, map pins and the quest log.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Live compare</h3>
+                        <p>When you're online together, changes sync as they happen. Side by side, you can see exactly where your logs differ.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Catch-up path</h3>
+                        <p>Pick a friend and a zone and get the quests they did that you haven't, as a route with an arrow to the next stop.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Sessions</h3>
+                        <p>Record a play session and send it to a friend so they can follow your exact route, with a map trail and playback.</p>
+                    </div>
+                </div>
+
+                <div class="gallery" data-gallery>
+                    <div class="tabs" role="tablist" aria-label="Screenshots">
+                        <button role="tab" aria-selected="true" aria-controls="shot-questlog" id="tab-questlog">Quest status</button>
+                        <button role="tab" aria-selected="false" aria-controls="shot-catchup" id="tab-catchup">Catch-up</button>
+                        <button role="tab" aria-selected="false" aria-controls="shot-path" id="tab-path">Path</button>
+                        <button role="tab" aria-selected="false" aria-controls="shot-sync" id="tab-sync">Sync</button>
+                    </div>
+                    <figure class="shot" role="tabpanel" id="shot-questlog" aria-labelledby="tab-questlog">
+                        <img src="/img/questlog.webp" width="1313" height="678" loading="lazy" alt="A quest in the quest log with a box showing which friends are done, ready to turn in, or still working on it.">
+                        <figcaption>Each friend's progress on a quest, right in the quest log.</figcaption>
+                    </figure>
+                    <figure class="shot tall" role="tabpanel" id="shot-catchup" aria-labelledby="tab-catchup" hidden>
+                        <img src="/img/catchup.webp" width="438" height="616" loading="lazy" alt="The Catch-up tab: zones with how many quests to catch up, and the quests in Stranglethorn Vale in order.">
+                        <figcaption>Catch-up lists what a friend finished that you haven't, zone by zone.</figcaption>
+                    </figure>
+                    <figure class="shot tall" role="tabpanel" id="shot-path" aria-labelledby="tab-path" hidden>
+                        <img src="/img/path.webp" width="472" height="621" loading="lazy" alt="The Path tab: the next step, pick up Tiger Mastery, with its waypoint and the steps after it.">
+                        <figcaption>The Path tab walks you through it, one stop at a time.</figcaption>
+                    </figure>
+                    <figure class="shot tall" role="tabpanel" id="shot-sync" aria-labelledby="tab-sync" hidden>
+                        <img src="/img/sync.webp" width="456" height="657" loading="lazy" alt="The Sync tab: four partners with their level, version and whether they're up to date.">
+                        <figcaption>Your partners, their versions and whether you're in step.</figcaption>
+                    </figure>
+                    <p class="note">Screenshots use made-up characters.</p>
+                </div>
+
+                <div class="cta-row">
+                    <a class="btn primary" data-download="SterlingQuest" href="https://github.com/SterlingAddons/SterlingQuest/releases/latest">Download zip</a>
+                    <a class="btn" href="#install">Install with WowUp</a>
+                    <a class="btn ghost" href="https://github.com/SterlingAddons/SterlingQuest">Source and guide on GitHub</a>
+                </div>
+                <p class="welcome"><span class="dot good" aria-hidden="true"></span><span>Ideas and bug reports are always welcome: <a href="https://github.com/SterlingAddons/SterlingQuest/issues">open an issue</a> or email <a href="mailto:support@sterlingaddons.com">support@sterlingaddons.com</a>.</span></p>
+            </div>
+        </section>
+
+        <section id="companion" class="band alt">
+            <div class="wrap split">
+                <div>
+                    <div class="product-head">
+                        <img class="medal" src="/img/quest.png" width="72" height="72" alt="">
+                        <div>
+                            <p class="eyebrow">Optional Windows app</p>
+                            <h2>Sterling Quest Sync Companion</h2>
+                            <p class="meta">
+                                <span class="ver" data-repo="SterlingQuestSync-App">v0.1.29</span>
+                                <span class="sep">·</span>
+                                <span>Windows</span>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="lead">Syncs your quests with friends even when you play at different times. You don't need it to sync while you're online together.</p>
+                    <ol class="flow">
+                        <li><b>You log out.</b> The game saves your progress.</li>
+                        <li><b>The Companion app sends it</b> to the free Sterling sync server.</li>
+                        <li><b>Your friend's Companion app</b> brings it down, ready for their next login.</li>
+                    </ol>
+                    <p class="small muted">It works both ways, pairs with your Sterling partners on its own, and updates itself. No email or password.</p>
+                    <div class="cta-row">
+                        <a class="btn primary" data-download="SterlingQuestSync-App" href="https://github.com/SterlingAddons/SterlingQuestSync-App/releases/latest">Download for Windows</a>
+                        <a class="btn ghost" href="https://github.com/SterlingAddons/SterlingQuestSync-App#troubleshooting">Troubleshooting</a>
+                    </div>
+                    <p class="small muted">Windows may say "Windows protected your PC" the first time. Click <b>More info</b>, then <b>Run anyway</b>.</p>
+                </div>
+                <figure class="frame-shot">
+                    <img src="/img/app-home.webp" width="1400" height="924" alt="The Companion app's Home page: up to date, a list of partners and recent activity.">
+                </figure>
+            </div>
+        </section>
+
+        <section id="more" class="band">
+            <div class="wrap">
+                <p class="eyebrow">Also from Sterling</p>
+                <h2>Small personal add-ons</h2>
+                <p class="muted">Built for my own play and shared as is. They work, but they come without support.</p>
+
+                <div class="minis">
+                    <article class="mini">
+                        <img src="/img/loot.png" width="56" height="56" alt="">
+                        <div>
+                            <h3>Sterling Loot Tracker <span class="ver" data-repo="SterlingLoot">v1.4</span></h3>
+                            <p>Shows who picked Need, Greed or Pass on every roll, keeps a roll history by dungeon or zone, and remembers where your gear came from. <code>/stl</code></p>
+                            <p class="links"><a data-download="SterlingLoot" href="https://github.com/SterlingAddons/SterlingLoot/releases/latest">Download</a> <span class="sep">·</span> <a href="https://github.com/SterlingAddons/SterlingLoot">GitHub</a> <span class="sep">·</span> <span class="muted">Personal add-on, no support.</span></p>
+                        </div>
+                    </article>
+                    <article class="mini">
+                        <img src="/img/hunter.png" width="56" height="56" alt="">
+                        <div>
+                            <h3>Sterling Hunter <span class="ver" data-repo="SterlingHunter">v1.7</span></h3>
+                            <p>Buys your ammo at vendors, warns you before you run out, and reminds you when a travel aspect is still on in combat. <code>/sth</code></p>
+                            <p class="links"><a data-download="SterlingHunter" href="https://github.com/SterlingAddons/SterlingHunter/releases/latest">Download</a> <span class="sep">·</span> <a href="https://github.com/SterlingAddons/SterlingHunter">GitHub</a> <span class="sep">·</span> <span class="muted">Personal add-on, no support.</span></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="install" class="band alt">
+            <div class="wrap">
+                <p class="eyebrow">Install</p>
+                <h2>Two ways to install</h2>
+
+                <div class="install">
+                    <div class="card">
+                        <h3>WowUp <span class="tag good">Recommended</span></h3>
+                        <ol>
+                            <li>Install <a href="https://wowup.io">WowUp</a> and point it at your WoW Forever folder.</li>
+                            <li>Open <b>Get Addons</b>, then <b>Install from URL</b>.</li>
+                            <li>Paste the add-on's link and install. Updates show up on their own after that.</li>
+                            <li>Start the game fresh. A <code>/reload</code> doesn't pick up new add-ons.</li>
+                        </ol>
+                        <ul class="urls">
+                            <li>
+                                <span class="url-name">Sterling Quest Sync</span>
+                                <code>https://github.com/SterlingAddons/SterlingQuest</code>
+                                <button class="copy" data-copy="https://github.com/SterlingAddons/SterlingQuest">Copy</button>
+                            </li>
+                            <li>
+                                <span class="url-name">Sterling Loot Tracker</span>
+                                <code>https://github.com/SterlingAddons/SterlingLoot</code>
+                                <button class="copy" data-copy="https://github.com/SterlingAddons/SterlingLoot">Copy</button>
+                            </li>
+                            <li>
+                                <span class="url-name">Sterling Hunter</span>
+                                <code>https://github.com/SterlingAddons/SterlingHunter</code>
+                                <button class="copy" data-copy="https://github.com/SterlingAddons/SterlingHunter">Copy</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Manual zip</h3>
+                        <ol>
+                            <li>Download the add-on's zip from its download button above.</li>
+                            <li>Unzip it into <code>World of Warcraft\_forever_\Interface\AddOns\</code>. You should end up with a folder like <code>AddOns\Sterling</code>.</li>
+                            <li>Start the game fresh and make sure the add-on is ticked in <b>AddOns</b> at character select.</li>
+                            <li>To update, do the same again with the newer zip.</li>
+                        </ol>
+                        <p class="small muted">Using the CurseForge app? It can't install from a GitHub link yet, so use WowUp for Sterling for now.</p>
+                    </div>
+                </div>
+
+                <!-- Listing badges go here once Quest Sync is on CurseForge and the WowUp Hub. -->
+                <div class="listings" aria-label="Other places to get Sterling Quest Sync">
+                    <span class="listing soon">CurseForge <em>coming later</em></span>
+                    <span class="listing soon">WowUp Hub <em>coming later</em></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="help" class="band">
+            <div class="wrap">
+                <p class="eyebrow">Help</p>
+                <h2>Help and privacy</h2>
+                <div class="helps">
+                    <a class="help" href="https://github.com/SterlingAddons/SterlingQuest/issues">
+                        <h3>Ideas and bug reports</h3>
+                        <p>For Sterling Quest Sync and the Companion app. Open an issue on GitHub.</p>
+                    </a>
+                    <a class="help" href="mailto:support@sterlingaddons.com">
+                        <h3>Email</h3>
+                        <p>support@sterlingaddons.com</p>
+                    </a>
+                    <a class="help" href="https://github.com/SterlingAddons/SterlingQuestSync-App#troubleshooting">
+                        <h3>Troubleshooting</h3>
+                        <p>Companion app not syncing or updating? Start here. Settings &gt; Copy details for help gives what's needed.</p>
+                    </a>
+                    <a class="help" href="https://github.com/SterlingAddons/SterlingQuestSync-Server#privacy">
+                        <h3>Privacy</h3>
+                        <p>What the sync server keeps, for how long, and what it never sees.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="wrap foot-in">
+            <div class="brand small-brand">
+                <img src="/img/sterling.png" width="24" height="24" alt="">
+                <span>Sterling</span>
+            </div>
+            <p>Built by Sterling with the help of Claude. Fan-made and not affiliated with Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
+            <p><a href="https://github.com/SterlingAddons">GitHub</a> <span class="sep">·</span> <a href="mailto:support@sterlingaddons.com">support@sterlingaddons.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
