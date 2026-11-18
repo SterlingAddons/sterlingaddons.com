@@ -72,6 +72,30 @@ function setupCopy(button)
     });
 }
 
+// Screenshots open full size in a pop-up. Click anywhere, the X or Escape closes it. Without JavaScript the link opens the picture.
+function setupZoom(box)
+{
+    const picture = box.querySelector("img");
+    const caption = box.querySelector(".lb-cap");
+
+    for (const link of document.querySelectorAll("a.zoom"))
+    {
+        link.addEventListener("click", (event) =>
+        {
+            const shot = link.querySelector("img");
+
+            event.preventDefault();
+            picture.src = link.href;
+            picture.alt = shot.alt;
+            caption.textContent = shot.alt;
+            box.showModal();
+        });
+    }
+
+    box.addEventListener("click", () => box.close());
+    box.addEventListener("close", () => picture.removeAttribute("src"));
+}
+
 // Newest versions from the site's own /api/versions (the Worker reads GitHub). The numbers in the page stay if it fails.
 async function loadVersions()
 {
@@ -114,4 +138,5 @@ async function loadVersions()
 
 document.querySelectorAll("[data-gallery]").forEach(setupGallery);
 document.querySelectorAll("button[data-copy]").forEach(setupCopy);
+document.querySelectorAll("dialog.lightbox").forEach(setupZoom);
 loadVersions();
